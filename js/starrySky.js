@@ -29,7 +29,7 @@
     this.stars = []
     this.starCount = 0
     this.options = {
-      starCount: 0.5, // could be 0.1/0.2... 1
+      starCount: 0.5,
       containerSelector: '.starry-sky-container',
       enableConnectLine: true,
       enableMouseEvent: true,
@@ -176,6 +176,7 @@
     _generateStar(
       x = Math.floor(Math.random() * this._containerWidth),
       y = Math.floor(Math.random() * this._containerHeight)) {
+
       const radius = (Math.random() + 0.5).toFixed(1)
       const fillStyle = this.options.starFillColor
 

@@ -7,20 +7,19 @@ Render a dynamic starry sky by canvas.
 ```js
   <script src="./js/starrySky.js"></script>
   <script>
-    const starrySky = new StarrySky({
-      enableConnectLine: false
-    })
+    new StarrySky({
+      lineColor: 'yellow',
+      starFillColor: 'yellow'
+    }).start()
 
-    starrySky.start()
-
-    // call stop() to stop render.
+    // stop() is called to stop render.
   </script>
 ```
 
 # options
 
 option|description|default
---|:--:|--:
+--|:--|:--
 starCount|The count of star,could be 0.1/0.2... 1|0.5
 containerSelector|container, supports css selector|.starry-sky-container
 enableConnectLine|show connection lines beteween each star|true
